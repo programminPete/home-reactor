@@ -1,5 +1,5 @@
 # Home Reactor 
-###### Home Reactor is an open source project attempting to create a modular platform and engaged community that enables developers to easily add in their react applications into a touch screen system with minimal effort and setup. 
+###### Home Reactor is an open source project attempting to create a modular platform and engaged community that enables developers to easily add in their applications into a touch screen system with minimal effort and setup. This is made possible by utilizing react's client side rendering capabilites and modular seperation of components and state between applications.
 
 <p align="center">
   <img src="./hubs-demo.jpg" width="350"/>
