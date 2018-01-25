@@ -39,7 +39,7 @@ sudo apt-get install chromium-browser
 -Pull down our docker-compose file from github: 
 
 ```sh
-git clone https://github.com/Home-Reactor/reactor-compose.git
+git clone https://github.com/Home-Reactor/home-reactor-compose.git
 cd reactor-compose
 ```
 -Run our docker compose:
