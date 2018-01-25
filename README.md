@@ -138,14 +138,22 @@ We'll try to put more information and links at our website to help provide resou
 [ASAP Labs](www.asap-labs.com)
 
 # JOIN us and build something awesome 
-We see this platform as an opportunity to create a wonderul marriage between smart mirror/productivity enthusiasts and home automation/Internet of Things enthusiasts; because right now the communities are fairly segregated. This platform aims to unite open source developers to work towards the best of many worlds
+We see this platform as an opportunity to create a wonderful marriage between smart mirror/productivity enthusiasts and home automation/Internet of Things enthusiasts; because right now, the communities seem to be fairly segregated. This platform aims to unite open source developers to work towards the best of many worlds. 
 
-So far we are just at the beginning setup, with a focus on having a clean platform that is very easy for developers to contribute to. We will definitely be addressing any bugs people come accross with our installation process, but in additon to that we would definitely love help on taking our platform to the next level by contributing 3rd party applications and infrastructure. 
-  Wish List:
-    - Server Support
+We feel that using React's modular routing capabilities, mixed with touch screen hubs, and relatively inexpensive small computers like raspberry pi's, make it possible to integrate simple "at a glance" applications to help productivity (such as magic mirror type widgits) with home automation applications that require pushing buttons and changing switches (such as home-assistant platform).
+
+So far we are just at the beginning setup, with a focus on having a clean platform that is very easy for developers to contribute to. We will definitely be addressing any bugs people come accross with our installation process, and make it easier to use, but in additon to that we would definitely love help on taking our platform to the next level by contributing 3rd party applications and infrastructure. 
+  A quick Wish List of growth opportunities:
+    - Server Support 
+        - Integrated through docker container/volumes
+          - MongodB/Mongoose
+          - SQL - postgres?
+    - Kiosk auto boot
+    - Kiosk Mode Security
     - Voice to Text:
       - Integration with Mycroft open source speech assistant (keeping with the open source theme)
       - Integration with Amazon Alexa and Google Home
     - More starter apps for the home page
     - Sockets for interconnected screens
     - Home Assistant integration - Home assistant has an api, but we have yet to implement it yet, it would be great if a hass enthusiast developed onto our platform. 
+
