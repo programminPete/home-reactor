@@ -11,6 +11,12 @@ body {
     font-size: 20px;
 }
 
+.weather-wrapper{
+    overflow:hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .app {
     width: 800px;
     height: 600px;

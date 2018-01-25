@@ -189,7 +189,7 @@ class App extends Component {
 
   render() {
     return (
-        <div>
+        <div className="weather-wrapper">
             <div className="app">
                 {this.renderWeather()}
             </div>

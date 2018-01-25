@@ -14,7 +14,7 @@ class StarterApp extends Component {
     }
     render() {
       return(
-        <div>
+        <div className="starter-wrapper">
           <div id="clock">
             <Clock format={'hh:mm:ss'} ticking={true} timezone={'US/Pacific'} />
           </div>

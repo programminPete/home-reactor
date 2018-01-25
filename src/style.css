@@ -56,9 +56,11 @@
   display: block;
   margin: 0 auto;
 }
-.starter-app-wrapper{
+
+.starter-wrapper{
   overflow:hidden;
   overflow-y: scroll;
+  height: 100vh;
 }
 
 #clock {
