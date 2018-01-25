@@ -1,0 +1,41 @@
+.btn {
+  outline: none;
+  box-shadow: none;
+  border-width: 2px;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 8px;
+  font-size: 25px;
+}
+
+.btn-primary {
+  color: #25A6FF;
+  border-color: #25A6FF;
+  background-color: transparent;
+}
+
+input {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #25A6FF;
+  border-bottom: 2px solid #25A6FF;
+  margin-right: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+  line-height: 37px;
+  color: #25A6FF;
+  background-color: #000;
+  font-size: 30px;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-top: 2px solid #25A6FF;
+  border-bottom: 2px solid #25A6FF;
+}
+
+.keyboard {
+  color: #000;
+  background-color: #000;
+}

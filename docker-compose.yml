@@ -1,0 +1,19 @@
+version: "2"
+services:
+
+  #docker-compose run --rm --service-ports start
+  start:
+    image: programminpete/reacthomehub:ubuntu
+    ports:
+      - "3000:3000"
+    command: npm run setup-start
+
+  #docker-compose run --rm --service-ports dev
+  dev:
+    image: programminpete/reacthomehub:ubuntu
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./devmodules/:/usr/app/src/devmodules
+      - ./devthumbnails/:/usr/app/src/devthumbnails
+    command: npm run setup-start

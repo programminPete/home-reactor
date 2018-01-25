@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url("./icons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafbfc;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+.app {
+    width: 800px;
+    height: 600px;
+    max-width: 100%;
+    background: #25A6FF;
+    padding: 3em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.weather-today {
+    height: 300px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.icon-description {
+    margin-top: 3em;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.icon-big {
+    margin-top: 4em;
+}
+
+.small-temp,
+.big-temp {
+    font-size: 5em;
+    position: absolute;
+    right: 50%;
+    margin-right: -150px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.big-temp:after,
+.small-temp:after {
+    content: "°";
+    opacity: 0.2;
+    font-family: monospace;
+    position: absolute;
+    right: -30px
+}
+.small-temp-thumb,
+.big-temp-thumb {
+    font-size: 3em;
+    position: relative;
+    color: white;
+    padding-left: 2.5em;
+    /*right: 50%;*/
+    /*bottom: 50%;*/
+    margin-right: .5em;
+    transform: translateY(50%);
+}
+
+.big-temp-thumb:after,
+.small-temp-thumb:after {
+    content: "°";
+    opacity: 0.2;
+    font-family: monospace;
+    position: absolute;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+.icon-wrapper-thumb {
+    position: relative;
+}
+
+.day {
+    clear: both;
+    padding: 2em 0;
+}
+
+.day-description {
+    text-align: left;
+    float: left;
+    width: 75%;
+    font-size: 1.2em;
+}
+
+.day .icon-wrapper {
+    width: 25%;
+    float: right;
+    top: -10px;
+    text-align: right;
+    right: -60px;
+    font-weight: bold;
+}
+
+.day .icon-wrapper .small-temp:after {
+    right: -15px;
+}
+
+.day .icon-wrapper .small-temp {
+    font-size: 2em;
+    margin-right: 1.7em;
+}
+
+.day .icon-wrapper .icon-small {
+    zoom: 0.3;
+}
+
+/* day thumb */
+.day-thumb {
+    clear: both;
+    padding: .5 em 0;
+}
+
+.day-description-thumb {
+    text-align: left;
+    float: left;
+    width: 75%;
+    font-size: 1.2em;
+}
+
+.day-thumb .icon-wrapper-thumb {
+    width: 25%;
+    float: right;
+    top: -1%;
+    text-align: right;
+    right: -1em;
+    font-weight: bold;
+}
+
+.day-thumb .icon-wrapper-thumb .small-temp-thumb:after {
+    right: -2em;
+}
+
+.day-thumb .icon-wrapper-thumb .small-temp-thumb {
+    font-size: 2em;
+    margin-right: 1.7em;
+}
+
+.day-thumb .icon-wrapper-thumb .icon-small-thumb {
+    zoom: 0.3;
+}

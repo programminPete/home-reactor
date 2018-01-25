@@ -1,0 +1,42 @@
+.thumbs {
+  align-items: center;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.weatherThumb .Left{
+    width: 70%;
+    background: #25A6FF;
+    padding: 3em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    padding: 155px;
+  
+  background-color: #25A6FF;
+}
+
+a {
+  text-decoration: none;
+  background-color: #25A6FF;
+}
+
+a:visited {
+  color: #000;
+}
+
+.weather-today-thumb {
+  background-color: #25A6FF;
+  border-radius: 8px;
+  width: 75%;
+  height: 20vh;
+  margin-left: 5%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: .5em;
+}

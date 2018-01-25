@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+.App {
+  text-align: center;
+  overflow:hidden;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.todo-wrapper {
+  margin: 20px auto;
+  width: 75%;
+  min-height: 95%;
+  border: 5px solid #25A6FF;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+h1 {
+  color: #25A6FF;
+  font-size: 1em;
+}
+
+ul {
+  font-family: 'Asap';
+  font-size: 30px;
+}

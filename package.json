@@ -1,0 +1,35 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "setup": "cd utilities && node ./fileStructureScript.js && node ./directoryScript && node ./thumbnailScript.js && node ./packageScript.js",
+    "setup-start": "cd utilities && node ./fileStructureScript.js && node ./directoryScript && node ./thumbnailScript.js && node ./packageScript.js && cd .. && react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "child_process": "^1.0.2",
+    "express": "^4.16.2",
+    "material-ui": "^0.20.0",
+    "material-ui-number-input": "^5.0.24",
+    "moment": "^2.20.1",
+    "react": "^16.2.0",
+    "react-big-calendar": "^0.17.0",
+    "react-clock": "^2.2.0",
+    "react-color": "^2.13.8",
+    "react-dom": "^16.2.0",
+    "react-live-clock": "^2.0.2",
+    "react-material-ui-keyboard": "^6.2.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-tap-event-plugin": "^3.0.2",
+    "react-textarea-autosize": "^5.2.1",
+    "react-touch-screen-keyboard": "^0.3.2",
+    "webpack-dev-server": "^2.11.0"
+  }
+}
