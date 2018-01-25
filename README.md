@@ -1,6 +1,10 @@
 # Home Reactor 
 ###### Home Reactor is an open source project attempting to create a modular platform and engaged community that enables developers to easily add in their react applications into a touch screen system with minimal effort and setup. 
 
+<p align="center">
+  <img src="./hubs-demo.jpg" width="350"/>
+</p>
+
 The focus of our platform is mainly for productivity and Internet of Things control, but it could really be applied for whatever you'd like.
 
 The platform has scripts that run and recreate the react routing structure based on developer modules. So, as long as the developer implements their file structure in the correct way, they should be able to drag their files into our "devmodules" folder, run our script, and be up and running in no time.
