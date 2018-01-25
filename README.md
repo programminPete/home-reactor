@@ -45,9 +45,9 @@ cd reactor-compose
 -Run our docker compose:
 ```sh
 #Ubuntu - use "start"
-sudo docker run --rm --service-ports start
+sudo docker-compose run --rm --service-ports start
 #Pi - use "pistart"
-sudo docker run --rm --service-ports pistart
+sudo docker-compose run --rm --service-ports pistart
 ```
 Then either go to localhost:3000 in your browser, or run the following chromium-browser command to put your computer into kiosk mode (which allows it to take the entire screen (note: `alt-tab` will let you out of that).
 ```sh
@@ -64,8 +64,9 @@ cd reactor-compose
 Now you should be in the folder and see the following
 - docker-compose.yml
 - README.md
-- devmodules
- **This is the most important part** - Copy whatever folder(s) you want into the devmodules folder but *Be sure that for each of your apps the format is as follows*: 
+ **This is the most important part** 
+ - make directory called `devmodules` in the current directory.
+ - Copy whatever folder(s) you want into the devmodules folder but *Be sure that for each of your apps the format is as follows*: 
 folder = *nameofyourapp* (note: all lowercase)
 topfile = *Nameofyourapp.jsx* (note: capitalized first letter)
 **Ex: for an added LedStrip app:**
@@ -85,9 +86,12 @@ registerServiceWorker();
 **Next, simply run the following 'dev' command, instead of the previous 'start' command** and the scripts will handle putting your files into our react router setup
 ```sh
 #Ubuntu - use "dev"
-sudo docker run --rm --service-ports dev
+sudo docker-compose run --rm --service-ports dev
 #Pi - use "pidev"
-sudo docker run --rm --service-ports pidev
+sudo docker-compose run --rm --service-ports pidev
+```
+Then either go to localhost:3000 in your browser, or run the following chromium-browser command to put your computer into kiosk mode (which allows it to take the entire screen (note: `alt-tab` will let you out of that).
+```sh
 sudo chromium-browser --kiosk http://localhost:3000
 ```
 Initial start up takes a little bit of time, but after the initial start up the switching back and forth between apps is extremely fast.
