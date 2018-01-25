@@ -147,11 +147,12 @@ We see this platform as an opportunity to create a wonderful marriage between sm
 We feel that using React's modular routing capabilities, mixed with touch screen hubs, and relatively inexpensive small computers like raspberry pi's, make it possible to integrate simple "at a glance" applications to help productivity (such as magic mirror type widgits) with home automation applications that require pushing buttons and changing switches (such as home-assistant platform).
 
 So far we are just at the beginning setup, with a focus on having a clean platform that is very easy for developers to contribute to. We will definitely be addressing any bugs people come accross with our installation process, and make it easier to use, but in additon to that we would definitely love help on taking our platform to the next level by contributing 3rd party applications and infrastructure. 
-  A quick Wish List of growth opportunities:
-    - Server Support 
-        - Integrated through docker container/volumes
-          - MongodB/Mongoose
-          - SQL - postgres?
+
+A quick Wish List of growth opportunities:
+  - Server Support 
+    - Integrated through docker container/volumes
+      - MongodB/Mongoose
+      - SQL (postgres?)
     - Kiosk auto boot
     - Kiosk Mode Security
     - Voice to Text:
