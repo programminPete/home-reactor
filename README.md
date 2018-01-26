@@ -141,6 +141,25 @@ Please let us know if you have any issues with these setup steps or have any oth
 We'll try to put more information and links at our website to help provide resources to help you with you touch screen setups and installation instructions.
 [ASAP Labs](www.asap-labs.com)
 
+
+## SIDE NOTE - Playing on your regular everyday windows/mac computer
+If you want to play around with our code base on your regular windows/mac computer, etc. you can take the following steps.
+Pull down our repository :
+```sh
+https://github.com/Home-Reactor/home-reactor.git
+cd home-reactor
+```
+Then take the same folder setup (devmodules, devthumbnails, package.json's into specific devmodule application folders) that you would do with the above steps. 
+Then run setup-start to run the scripts AND start the server:
+```sh
+npm run setup-start
+```
+Or, to just run the scripts run:
+```sh
+npm run setup
+```
+
+
 # JOIN us and build something awesome 
 We see this platform as an opportunity to create a wonderful marriage between smart mirror/productivity enthusiasts and home automation/Internet of Things enthusiasts; because right now, the communities seem to be fairly segregated. This platform aims to unite open source developers to work towards the best of many worlds. 
 
