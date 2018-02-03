@@ -18,14 +18,11 @@ const getDirectories = (srcPath, outputArr) => {
   })
 }
 getDirectories(dir, dirArr)
-console.log('dirArr before: ', dirArr)
 
 if(fs.existsSync(dirDev)){
   // if there is a folder in dirArrDev - concat into dirArr
   getDirectories(dirDev, dirArrDev)
 }
-console.log('dirArr after Dev: ',dirArr)
-
 
 // print out files
 /*
@@ -86,7 +83,7 @@ var strArrClose = [
 
 
 // pulling router file location from top of document
-console.log('routerFile: ', routerFile);
+console.log('routerFile: ', routerFile, '\n');
 if (fs.existsSync(routerFile)) {
   fs.unlinkSync(routerFile)
 }
@@ -117,13 +114,11 @@ for(let i = 0; i < strArrStaticOpen.length; i++){
   });
 }
 // add the developer modules to the switch statement  
-console.log(strArrDynamicRoute);
 for(let i = 0; i < strArrDynamicRoute.length; i++){
   fs.appendFileSync(routerFile, strArrDynamicRoute[i], function(err){
     if(err) throw err;
   });
 }
-console.log(strArrDynamicRouteDev);
 for(let i = 0; i < strArrDynamicRouteDev.length; i++){
   fs.appendFileSync(routerFile, strArrDynamicRouteDev[i], function(err){
     if(err) throw err;
@@ -138,6 +133,5 @@ for(let i = 0; i < strArrClose.length; i++){
 
 fs.readFile(routerFile, 'utf8', function(err,data){
   if(err) throw err;
-  console.log('OK ' + routerFile);
   console.log(data)
 });
