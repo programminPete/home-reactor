@@ -5,8 +5,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "node server/server.js",
     "setup": "cd utilities && node ./fileStructureScript.js && node ./directoryScript && node ./thumbnailScript.js && node ./packageScript.js",
     "setup-start": "cd utilities && node ./fileStructureScript.js && node ./directoryScript && node ./thumbnailScript.js && node ./packageScript.js && cd .. && react-scripts start",
+    "start-all": "concurrently --kill-others \"npm run server\" \"npm run setup-start\"",
+    "dev-start-all": "concurrently --kill-others \"npm run server\" \"npm start\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -14,7 +17,10 @@
     "axios": "^0.17.1",
     "bluebird": "^3.5.1",
     "child_process": "^1.0.2",
-    "express": "^4.16.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "googleapis": "^27.0.0",
     "material-ui": "^0.20.0",
     "material-ui-number-input": "^5.0.24",
     "moment": "^2.20.1",
@@ -30,6 +36,8 @@
     "react-tap-event-plugin": "^3.0.2",
     "react-textarea-autosize": "^5.2.1",
     "react-touch-screen-keyboard": "^0.3.2",
+    "readline": "^1.3.0",
     "webpack-dev-server": "^2.11.0"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
